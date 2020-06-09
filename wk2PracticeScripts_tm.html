@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<!--Tylor Menegay GA 2 1/18/2020-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Language Basics</title>
+    </head>
+
+    <body>
+        <h1>JavaScript Language Basics</h1>
+        <script>
+        	function myFunction() 
+        	{
+
+        		alert("Hello There! I am an alert box!");
+        	}
+        </script>
+
+        <script>
+        	//work with prompts and writing to the browser window
+
+        	const favFood = prompt('What is your favorite food?');
+        	const codePrac = prompt('How many hours a day will you practice coding?');
+        	const hours = codePrac * 365;
+        	document.write('<br>Your favorite food is ' + favFood);
+        	document.write('<br>You will practice ' + codePrac + ' hours a day, which equates to ' + hours + ' hours a year. Will this be enough hours to become an expert?' );
+
+        	const favPet = prompt('What is the name of your favorite pet?');
+        	const fName = prompt('What is your first name?');
+        	const pizza = prompt('How many slices of pizza could you eat in one sitting?');
+        	const myPizza = pizza *2 ;
+        	document.write('<br>Hello ' + fName + ', I hear that your favorite pet is named ' + favPet + ', that\'s pretty cool. I also see that you can eat ' + pizza + ' slices of pizza in one sitting. I can eat at least ' + myPizza + ' slices in one sitting.')
+        </script>
+        <script>
+        	function changeText()
+        	{
+        		document.getElementById('newText').innerHTML = 'JavaScript is so much FUN!';
+        	}
+        </script>
+
+        <p> I've really been enjoying this course so far! <strong id='newText'>This text will be replaced!</strong></p>
+        <input type='button' onclick='changeText()' value='Click for New Text'>
+
+    </body>
+	
+</html>

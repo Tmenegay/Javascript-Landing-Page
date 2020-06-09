@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+     Tylor Menegay 2/13/2020
+     Exam Part 2
+
+   -->
+   <meta charset="utf-8" />
+   <title>Temperature Converter</title>
+   <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<header>
+		<h1>Fahrenheit to Celsius converter</h1>
+	</header>
+	<!--Entering the javascript on the html page -->
+	<script type="text/javascript">
+		//Creates the conversion to celsius 
+		function convertToC() {
+        var fVal = parseFloat(document.getElementById('f').value);
+        var cVal = (fVal - 32) * (5 / 9);
+        document.getElementById('c').value = cVal;
+        return false;
+   		 }
+   		 //Creates the conversion to fahrenheit
+   		function convertToF() {
+       	var cVal = parseFloat(document.getElementById('c').value);
+      	var fVal = (cVal * (9 / 5)) + 32;
+      	console.log(fVal);
+        document.getElementById('f').value = fVal;
+        return false;
+   		 }
+	</script>
+	<form name="Form">
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>Fahrenheit</td>
+                <td>
+                    <input name="f" id="f" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToC();return false">Convert to Celsius</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Celsius</td>
+                <td>
+                    <input name="c" id="c" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToF();return false">Convert to Fahrenheit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- make sure for now that your script tag is in the head -->
+    <title>DOM Lab</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 25px 50px 75px 100px;
+}
+</style>
+<body id= "wrapper">
+    <h1 id="myHeading">Lab 7</h1>
+    <div class="hello">
+        Hello World
+    </div>
+    <div class="hello">
+        Hello Everyone!
+    </div>
+   <div class = "link">
+    <a href="#">This link goes nowhere!</a>
+   </div>
+    <button id ="myButton">Click me!</button>
+    <script>
+        //Tylor Menegay 3/3/2020
+        // you can put your JavaScript in here, or include an external file.
+        let firstDiv = document.getElementsByTagName("div")[0]; //captures the first div of an array
+        firstDiv.innerHTML = "Hola Mundo!";
+        firstDiv.style.color = "#ff000";
+        firstDiv.style.backgroundColor = "#d3d3d3";
+
+        let secondDiv = document.getElementsByTagName("div")[1]; //captures the second dive of an array
+        secondDiv.innerText = "Hola a todos!";
+
+        let newDiv = document.createElement("div"); //create a new element
+        let button = document.createElement("button");
+        button.innerText = "I am a button created with JavaScript!";
+        let wrapper = document.getElementById("wrapper");
+        wrapper.appendChild(button);
+
+        let removeLink = document.getElementsByTagName("a")[0]; //remove elements
+        let linkDiv = document.getElementsByTagName("div")[2];
+        linkDiv.removeChild(removeLink);
+
+        let divs = document.querySelectorAll("div");
+        //divs.style.backgroundColor = "#f9f"; //this will not work, try to understand the error you receive
+
+        //we haveto use a loop for each one instead.
+        for (let i = 0; i < divs.length; i++)
+        {
+            divs[i].style.backgroundColor = "#f9f"; //this works
+        }
+
+        const myHeading = document.getElementById('myHeading');
+        //select buttton
+        const myButton = document.getElementById('myButton')
+
+        myButton.addEventListener('click', () =>
+        {
+            myHeading.style.color = 'f00';
+        });
+    </script>
+</body>
+</html>

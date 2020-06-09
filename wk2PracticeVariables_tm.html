@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--Tylor Menegay GA 1/18/2020-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Language Basics</title>
+    </head>
+
+    <body>
+        <h1>JavaScript Language Basics</h1>
+    	<script>
+    		let firstName = 'Mickey'; //value assigned to variable firstName is Mickey
+
+    		//declare more variables
+    		let lastName = 'Mouse';
+    		console.log(lastName);
+
+    		let age = 90; //this is a number, not a string
+    		console.log(age);
+
+    		/*what is the result of the following code?*/
+
+    		job = 'Cartoon Character';
+    		console.log(job);
+
+    		/*Concatenate values*/
+
+    		console.log(firstName + ' ' +lastName) //use the operator + plus sign to join variable values
+
+    		/*Alerts*/
+
+    		alert(firstName + ' is a ' + job);
+
+    		/*Prompts*/
+
+    		let favFood = prompt('What is your favorite food?');
+    		console.log('Your favorite food is: ' + favFood);
+
+    		// Code the following, provide answers to those lines that are in the form of a question
+
+    		// Create a constant variable named entree and set it equal to the string 'Enchiladas'.
+
+    		const entree = 'Enchiladas';
+
+    		//create a constant variable named price that is equal to 12
+
+    		const price = 12;
+
+    		//print the values stored in these variables to the console
+
+    		console.log(entree);
+    		console.log(price);
+
+    		//If I were to type in entree = 'Tacos', it would still return Enchiladas. 
+
+    		let meal = 'Enchiladas';
+    		console.log(meal);
+    		meal = 'Tacos';
+    		console.log(meal);
+
+    		//I would use const, because those are the only variables that are retrieved by fname, lname, and ddage for the rest of the program.
+
+    		const fName = 'Donald';
+    		const lName = 'Duck';
+    		const ddAge = '12';
+    		console.log(fName +' ' + lName + ' is ' + ddAge + ' years old!');
+
+    		let x=4;
+    		x +=2; //x equals 6
+
+    		let y = 4;
+    		y -= 2; //y equals 2
+
+    		let z = 4;
+    		z *= 2; //z equals 8
+
+    		let r = 4;
+    		r++; //r equals 5, increments
+
+    		let t = 4;
+    		t--; //t equals 3, decrements. 
+
+    		//Interpolation-inserting data saved in a variable into a string
+
+    		let myPets = 'cats';
+    		console.log('I own five(5) '+ myPets + '.')
+    	</script>
+
+    </body>
+	
+</html>

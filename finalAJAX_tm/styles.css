@@ -1,0 +1,17 @@
+#container {
+	padding-top: 2%;
+	padding-left: 2%;
+}
+
+h1,h2 {
+	font-family: Arial;
+
+}
+
+html {
+	background-color: teal;
+}
+
+ul {
+	list-style-type: circle;
+}

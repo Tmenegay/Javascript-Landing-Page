@@ -1,0 +1,53 @@
+<!--Exam 2 Part 2-->
+
+<!--Tylor Menegay 3/16/2020-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "utf-8">
+<title>Exam 2 Part2</title>
+</head>
+
+<body>
+	<script>
+		'use strict'; //make sure there are no undeclared variables
+		function sumInput() //create a function
+		{
+			let number = []; //create an array
+
+			while (true) //establish a loop to allow data entry
+			{
+				let value = prompt("Please enter a number please! Press \"Cancel\" to quit!", 0); //message to the user
+
+				if (value === "" || value ===null || !isFinite(value)) break; //ensure the entry is a number
+
+				numbers.push(+value); //populate the array
+
+
+				
+			}
+
+			let sum = 0; //initialize a sum variable to store the total value
+
+			for (let number of numbers) //establish a loop to loop through the array
+			{
+				sum += number;
+			}
+			return sum;
+
+			document.write("<p>" + value +"</p>")
+		}
+
+			alert( sumInput() ); //call the function
+
+		let answer = prompt('What is your name?');//get the name
+
+		if (answer ==="")//run through the loop
+		{
+			document.write("<p> Hello " + answer + " how are you</p>")
+		}
+	</script>
+</body>
+
+</html>
